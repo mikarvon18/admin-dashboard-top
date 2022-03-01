@@ -54,6 +54,7 @@ body {
 .sidebar-navigation {
     display: grid;
     gap: 20px;
+    align-items: center;
 }
 
 .content {
@@ -62,6 +63,7 @@ body {
     grid-template-rows: 1fr 1fr;
     background-color: #E0F2FE;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .projects {
@@ -81,10 +83,11 @@ body {
     margin-right: 20px;
 }
 .project-item {
+    box-sizing: border-box;
     height: 200px;
     width: 300px;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5%;
     box-shadow: 5px 5px 10px #9CA3AF;
     
@@ -165,4 +168,13 @@ input[type="text"]{
 }
 .announcement-text {
     font-weight: lighter;
+}
+
+.sidebar-item {
+}
+
+.sidebar-item > img,
+.sidebar-title > img {
+    filter: invert(100%) sepia(95%) saturate(20%) hue-rotate(2deg) brightness(106%) contrast(105%);
+    padding-right: 4px;
 }
